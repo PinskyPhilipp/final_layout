@@ -611,3 +611,156 @@ details summary {
 }
 
 /**************    POST         ******************/
+.post__title {
+    color: #555555;
+    font-family: "Raleway - Semi Bold";
+    font-size: 30px;
+    font-weight: 400;
+    display: block;
+    text-align: center;
+    margin-top: 82px;
+    margin-bottom: 30px;
+}
+
+.post__txt {
+    width: 757px;
+    color: #8c8c8c;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    text-align: center;
+    margin: auto;
+}
+
+.post__box {
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-color: #ffffff;
+    border: 1px solid #f8f8f8;
+    margin-top: 40px;
+    position: relative;
+}
+
+.post__box-title {
+    color: #555555;
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 30px 82px 19px 29px;
+}
+
+.post__box-txt {
+    color: #8c8c8c;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    margin-left: 29px;
+    margin-bottom: 27px;
+
+}
+
+.post__box-link {
+    color: #c7b299;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    text-decoration: none;
+    margin-left: 30px;
+    margin-bottom: 33px;
+}
+
+.post__item {
+    display: flex;
+    justify-content: space-between;
+    width: 1170px;
+    margin: auto;
+}
+
+.date {
+    width: 50px;
+    height: 60px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-image: url(../img/bg-date1.jpg),
+        url(../img/bg-date2.jpg);
+    background-size: 100%, 100%;
+    background-position: top center, bottom center;
+    background-repeat: no-repeat, no-repeat;
+    border-radius: 5px;
+}
+
+.date-num {
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 20px;
+    margin: 9px 10px 8px 10px;
+    display: block;
+}
+
+.date-month {
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    display: block;
+    margin-left: 14px;
+}
+
+.post__photo:hover {
+    filter: brightness(40%);
+}
+
+/******************  partners   **************************/
+.partners {
+    background-image: url(../img/partner-bg.jpg);
+    width: 1920px;
+    height: 489px;
+    /*    filter: brightness(40%);*/
+    display: flex;
+    align-items: center;
+
+}
+
+.partners__wraper {
+    width: 1110px;
+    height: 210px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__box {
+    width: 1920px;
+    height: 508px;
+    background-color: #191919;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.copipast {
+    width: 1920px;
+    height: 111px;
+    background-color: #111111;
+}
+
+.footer__box-item {
+    height: 347px;
+    width: 350px;
+    background-color: azure;
+}
+
+.post {
+    padding-bottom: 142px;
+}
