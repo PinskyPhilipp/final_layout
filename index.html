@@ -18,6 +18,8 @@
                     <span class="logo-text">Waxom</span>
                 </a>
                 <nav class="menu">
+                    <label for="menu"></label>
+                    <input id="menu" type="checkbox">
                     <ul class="menu__list">
                         <li><a href="#">Waxom</a></li>
                         <li><a href="#">About Us</a></li>
@@ -104,10 +106,6 @@
             </a>
         </section>
 
-
-        <!--        На baground исправлю позже-->
-
-
         <article class="realization">
             <div class="realization__wraper">
                 <h2 class="realization__title">Waxom is Realization of your Ideas.</h2>
@@ -190,32 +188,22 @@
                 <h2 class="devices__discription-title">Excellent for Mobile Devices.</h2>
                 <p class="devices__discription-txt">Qisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius claritas. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
 
-                <ul class="devices__discription-list">
-                    <li>
-                        <details>
-                            <summary>Nam liber tempor cum soluta nobis eleifend option;</summary>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, sunt.</p>
-                        </details>
-                    </li>
-                    <li>
-                        <details>
-                            <summary>Option congue nihil imperdiet doming id quod mazim placerat facer;</summary>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, sunt.</p>
-                        </details>
-                    </li>
-                    <li>
-                        <details>
-                            <summary>Eodem modo typi, qui nunc nobis videntur parum futurum;</summary>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, sunt.</p>
-                        </details>
-                    </li>
-                    <li>
-                        <details>
-                            <summary>Investigationes demonstraverunt lectores</summary>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, sunt.</p>
-                        </details>
-                    </li>
-                </ul>
+                <details class="devices__discription-list">
+                    <summary>Nam liber tempor cum soluta nobis eleifend option;</summary>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, sunt.</p>
+                </details>
+                <details class="devices__discription-list">
+                    <summary>Option congue nihil imperdiet doming id quod mazim placerat facer;</summary>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, sunt.</p>
+                </details>
+                <details class="devices__discription-list">
+                    <summary>Eodem modo typi, qui nunc nobis videntur parum futurum;</summary>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, sunt.</p>
+                </details>
+                <details class="devices__discription-list">
+                    <summary>Investigationes demonstraverunt lectores</summary>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, sunt.</p>
+                </details>
             </div>
         </section>
         <section class="launch">
@@ -366,17 +354,77 @@
                 </svg>
             </div>
         </section>
-        <footer>
-            <section class="footer__box">
-                <div class="footer__box-item"></div>
-                <div class="footer__box-item"></div>
-                <div class="footer__box-item"></div>
-                <div class="footer__box-item"></div>
-            </section>
-            <section class="copipast">
 
+        <footer>
+            <div class="footer__wraper">
+                <section class="footer__box">
+                    <div class="footer__box-item">
+                        <a href="#" class="footer__logo">
+                            <img src="img/logos.png" alt="Логотип" class="footer__logo-img">
+                            <span class="footer__logo-text">Waxom</span>
+                        </a>
+                        <p class="footer__box-txt">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci suscipit lobortis claritatem.</p>
+                        <a href="#" class="footer__link">Read More</a>
+                    </div>
+                    <div class="footer__box-item">
+                        <span class="footer__post-title">Recent Posts</span>
+                        <div class="footer__post">
+                            <span class="footer__post-data">September 08, 2015</span>
+                            <p class="footer__post-txt">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+                        </div>
+                        <div class="footer__post">
+                            <span class="footer__post-data">September 08, 2015</span>
+                            <p class="footer__post-txt">Diam nonummy nibh euismod tincidunt ut laoreet dolore magna</p>
+                        </div>
+                        <div class="footer__post">
+                            <span class="footer__post-data">September 08, 2015</span>
+                            <p class="footer__post-txt">Claritas est etiam processus dynamicus, qui sequitur mutationem per seacula quarta decima</p>
+                        </div>
+
+                    </div>
+                    <div class="footer__box-item">
+                        <span class="footer__twit">Our Twitter</span>
+                        <div class="footer__post">
+                            <p class="footer__post-txt"><span class="post-txt-twit">@waxom</span> Cum soluta nobis eleifend option congue nihil imperdiet doming</p>
+                            <span class="footer__post-data">3 mins ago</span>
+                        </div>
+                        <div class="footer__post">
+                            <p class="footer__post-txt">Mirum est <span class="post-txt-twit">#envato</span> notare quam littera gothica, quam nunc putamus parum anteposuerit litterarum</p>
+                            <span class="footer__post-data">5 hours ago</span>
+                        </div>
+                        <div class="footer__post">
+                            <p class="footer__post-txt">Soluta nobis option <span class="post-txt-link">bit.ly/1Hniso7</span></p>
+                            <span class="footer__post-data">20 days ago</span>
+                        </div>
+                    </div>
+                    <div class="footer__box-item">
+                        <span class="footer__widget">Dribbble Widget</span>
+                        <div class="widget-wraper">
+                            <img src="img/widget1.jpg" alt="widget" class="widget-img" width="130" height="98">
+                            <img src="img/widget2.jpg" alt="widget" class="widget-img">
+                            <img src="img/widget3.jpg" alt="widget" class="widget-img">
+                            <img src="img/widget4.jpg" alt="widget" class="widget-img">
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <section class="copipast">
+                <div class="copipast__wraper">
+                    <div class="copipast__info">
+                        <span class="copipast__logo">Copyright © 2015 <span class="stile">Waxom</span></span>
+                        <a href="#" class="copipast__link">Privacy Policy</a>
+                        <a href="#" class="copipast__link">FAQ</a>
+                        <a href="#" class="copipast__link">Support</a>
+                    </div>
+                    <div class="copipast__info">
+                        <a href="#" class="copipast__link">Designed by ThemeFire</a>
+                        <a href="#" class="copipast__link">Only on Envato Market</a>
+                    </div>
+                </div>
             </section>
         </footer>
+
+
     </main>
 </body>
 

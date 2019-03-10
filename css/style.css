@@ -214,9 +214,8 @@ body {
     background-color: #c7b299;
 }
 
-.services__items-header:hover,
-.services__items-txt:hover {
-    color: #deb887;
+.services__items-header:hover {
+    color: #c7b299;
 }
 
 
@@ -548,14 +547,35 @@ body {
     font-weight: 300;
     line-height: 28px;
     list-style-type: none;
-    margin-left: 50px;
+    margin-left: 80px;
     width: 596px;
 }
 
-details summary {
+summary {
+    position: relative;
     outline: none;
 }
 
+summary::-webkit-details-marker {
+    display: none
+}
+
+summary:before {
+    content: url(../img/01.png);
+    position: absolute;
+    top: 5px;
+    left: -35px;
+}
+
+details[open] summary:before {
+    content: url(../img/01.png);
+    transform: rotate(90deg);
+    position: absolute;
+    top: -2px;
+    left: -40px;
+}
+
+/********  launch         *********/
 .launch {
     width: 1920px;
     background-color: #f4f5f8;
@@ -716,9 +736,44 @@ details summary {
     margin-left: 14px;
 }
 
+/*
 .post__photo:hover {
     filter: brightness(40%);
+}*/
+
+.post {
+    padding-bottom: 142px;
 }
+
+.post__box:hover {
+    background-color: #362f2d;
+}
+
+.post__box:hover .post__photo {
+    filter: brightness(40%);
+}
+
+.post__box:hover .post__box-title {
+    color: #c7b299;
+}
+
+.post__box:hover .post__box-txt {
+    color: #fff;
+}
+
+.post__box:hover .date {
+    background-image: url(../img/bg-date-hover1.png),
+        url(../img/bg-date-hover2.png);
+    background-size: 100%, 100%;
+    background-position: top center, bottom center;
+    background-repeat: no-repeat, no-repeat;
+}
+
+.post__box-link:hover:after {
+    content: url(../img/arrow.png);
+    margin-left: 9px;
+}
+
 
 /******************  partners   **************************/
 .partners {
@@ -740,13 +795,15 @@ details summary {
     align-items: center;
 }
 
+/**********   footer   ***********/
 .footer__box {
-    width: 1920px;
+    width: 1170px;
     height: 508px;
-    background-color: #191919;
+
     display: flex;
     justify-content: space-around;
     margin: auto;
+    padding-top: 94px;
 }
 
 .copipast {
@@ -755,12 +812,258 @@ details summary {
     background-color: #111111;
 }
 
-.footer__box-item {
-    height: 347px;
-    width: 350px;
-    background-color: azure;
+.footer__box-txt {
+    color: #555555;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    margin-top: 29px;
+    margin-bottom: 33px;
 }
 
-.post {
-    padding-bottom: 142px;
+.footer__box-item {
+    width: 271px;
+}
+
+.footer__logo {
+    display: block;
+    position: relative;
+}
+
+.footer__logo-text {
+    color: #ffffff;
+    font-family: Raleway;
+    font-size: 34px;
+    font-weight: 400;
+    letter-spacing: -1.36px;
+    margin-bottom: 15px;
+    margin-left: 70px;
+}
+
+.footer__logo {
+    display: block;
+    width: 181px;
+    height: 56px;
+    text-decoration: none;
+    position: relative;
+}
+
+.footer__logo-img {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+}
+
+.footer__link {
+    width: 74px;
+    height: 11px;
+    color: #d1d1d1;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+.footer__post-title,
+.footer__twit,
+.footer__widget {
+    color: #ffffff;
+    font-family: Raleway;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.footer__post-data {
+    color: #363636;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+.footer__post-txt {
+    color: #555555;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+.footer__wraper {
+    background-color: #191919;
+}
+
+.footer__post {
+    margin-top: 42px;
+    margin-bottom: 22px;
+}
+
+.footer__post:last-child:after {
+    content: none;
+}
+
+.footer__post:after {
+    content: "";
+    width: 270px;
+    height: 1px;
+    background-color: #595f6f;
+    display: block;
+    margin-top: 21px;
+}
+
+.widget-wraper {
+    padding-top: 26px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.widget-img {
+    margin-bottom: 10px;
+}
+
+.post-txt-twit {
+    color: #00bff3;
+}
+
+.post-txt-link {
+    color: #959595;
+}
+
+.copipast__wraper {
+    width: 1170px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 45px 0 52px 0;
+}
+
+.copipast__info {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.copipast__logo {
+    color: #555555;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+    border-right: 1px solid #252525;
+    padding-right: 15px;
+}
+
+.stile {
+    color: #959595;
+}
+
+.copipast__link {
+    text-decoration: none;
+    padding: 0 15px;
+    border-right: 1px solid #252525;
+    color: #252525;
+}
+
+label,
+#menu {
+    display: none;
+}
+
+input[type="checkbox"]:checked ~ .menu__list {
+    visibility: visible;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .menu__list {
+        flex-direction: column;
+        align-items: flex-end;
+        margin-bottom: 20px;
+    }
+
+    .box-slogan {
+        display: none;
+    }
+
+    .services {
+        width: 1000px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+    .items-header__link {
+        width: 350px;
+    }
+
+    .main-header {
+        height: 100%;
+    }
+
+    .box-nav {
+        margin: 10px;
+        align-items: flex-start;
+    }
+
+    .menu__list li:nth-child(n+9) {
+        display: none;
+    }
+
+    .realization,
+    .text-box,
+    .launch,
+    .footer__wraper {
+        display: none;
+    }
+
+    .project__wraper {
+        width: 800px;
+        flex-wrap: wrap;
+    }
+
+    .devices {
+        width: 800px;
+        margin-left: 250px;
+        padding-left: 400px;
+    }
+
+    .devices__discription {
+        margin: 0;
+    }
+
+    .post__item {
+        width: 800px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    label {
+        display: block;
+        width: 50px;
+        height: 50px;
+        border: 1px solid black;
+        background-image: url('https://cdn3.iconfinder.com/data/icons/mobile-friendly-ui/100/menu-128.png');
+        background-size: 100%;
+        float: right;
+    }
+
+    .menu__list {
+        visibility: hidden;
+        margin: 0 auto;
+        height: auto;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu__list li {
+        height: 40px;
+        text-align: center;
+        margin-top: 2px;
+    }
 }
